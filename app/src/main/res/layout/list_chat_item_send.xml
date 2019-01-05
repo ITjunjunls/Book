@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<TextView
+    android:id="@+id/tv_time"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:text="昨天上午 8:49"
+    android:layout_margin="5dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ease_default_avatar"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你好"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@+id/iv_avatar"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/ease_chatto_bg"/>
+        <ImageView
+            android:id="@+id/iv_state"
+            android:layout_toLeftOf="@id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/msg_error"/>
+    </RelativeLayout>
+</LinearLayout>

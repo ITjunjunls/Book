@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/card_background_selector"
+    >
+    <ImageView
+        android:id="@+id/car_bookpic"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/car_bookname"
+        android:layout_width="1800dp"
+        android:layout_height="wrap_content"
+        android:text="123"
+        android:layout_toRightOf="@+id/car_bookpic"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:lines="1"
+        android:ellipsize="end"
+        android:textColor="@drawable/item_color"
+        />
+
+    <TextView
+        android:id="@+id/cancel_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消借阅"
+        android:padding="10dp"
+        android:textColor="@color/standardwhite"
+        android:background="@drawable/buttonshape"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/car_endtime"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/car_bookname"
+        android:layout_alignStart="@+id/car_bookname"
+        android:layout_below="@+id/car_bookname"
+        android:layout_marginTop="10dp"
+        android:text="暂无"
+        android:textSize="8sp" />
+</RelativeLayout>

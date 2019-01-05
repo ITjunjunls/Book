@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "cn.edu.uzz.activity.book"
+        buildToolsVersion "28.0.2"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "2.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets.main {
+        jniLibs.srcDirs =['libs']
+    }
+}
+repositories {
+    flatDir {
+        dirs 'libs' //就是你放aar的目录地址
+    }
+    maven { url 'https://jitpack.io' }
+}
+configurations.all {
+    resolutionStrategy.force 'com.android.support:support-annotations:27.1.1'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    androidTestCompile 'com.android.support.test:runner:1.0.1'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile files('libs/MobCommons-2017.0607.1736.jar')
+    compile files('libs/MobTools-2017.0607.1736.jar')
+    compile name: 'SMSSDK-3.0.0', ext: 'aar'
+    compile name: 'SMSSDKGUI-3.0.0', ext: 'aar'
+    compile files('libs/volley.jar')
+    compile project(':libzxing')
+    compile files('libs/gson-2.2.1.jar')
+    compile project(':library')
+    compile 'com.youth.banner:banner:1.4.10'
+    compile 'com.facebook.fresco:fresco:0.12.0'
+    compile 'com.alibaba:fastjson:1.1.46.android'
+    compile files('libs/jcore-android-1.1.9.jar')
+    compile files('libs/jpush-android-3.1.1.jar')
+    compile 'com.github.codbking:PickTime:v1.0.1'
+    compile 'com.github.bboylin:UniversalToast:v1.0.9'
+    // 请添加上fresco的依赖，可以把fresco版本替换成最新的
+    compile 'com.facebook.fresco:fresco:1.10.0'
+    compile 'com.facebook.fresco:animated-gif:1.10.0'
+    compile files('libs/hyphenatechat_3.2.3.jar')
+    compile files('libs/avoscloud-sdk-v3.16.3.jar')
+    compile files('libs/okhttp-2.6.0-leancloud.jar')
+    compile files('libs/okio-1.6.0-leancloud.jar')
+    compile 'org.greenrobot:eventbus:3.1.1'
+}

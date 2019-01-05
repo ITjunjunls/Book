@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/card_background_selector"
+    >
+    <ImageView
+        android:id="@+id/renting_bookpic"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/renting_bookname"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="123"
+        android:layout_toRightOf="@+id/renting_bookpic"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:lines="1"
+        android:ellipsize="end"
+        android:textColor="@drawable/item_color"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:id="@+id/suggest"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/mlcfenhongse"
+        android:textSize="15sp"/>
+
+</RelativeLayout>

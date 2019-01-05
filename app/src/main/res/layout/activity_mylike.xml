@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/standardgreen"
+        android:orientation="vertical"
+        android:id="@+id/like_title">
+        <ImageView
+            android:id="@+id/like_return"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/book_return"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="我的收藏"
+            android:textColor="@color/standardwhite"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/likelist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/like_title"
+        android:padding="1dp"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:dividerHeight="10dp"></ListView>
+    <ImageView
+        android:id="@+id/like_fail_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/book_fail"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/like_fail_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/standardgreen"
+        android:text="您还没有收藏任何书籍"
+        android:textSize="30sp"
+        android:layout_below="@+id/like_fail_img"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

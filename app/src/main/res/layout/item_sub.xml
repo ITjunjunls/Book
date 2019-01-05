@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/card_background_selector">
+    <ImageView
+        android:id="@+id/sub_pic"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="7dp"/>
+    <TextView
+        android:id="@+id/sub_name"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="123"
+        android:layout_toRightOf="@+id/sub_pic"
+        android:layout_marginLeft="10dp"
+        android:lines="1"
+        android:ellipsize="end"
+        android:textColor="@drawable/item_color"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:id="@+id/cancel_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消预定"
+        android:padding="10dp"
+        android:textColor="@color/standardwhite"
+        android:background="@drawable/buttonshape"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/book_login_background"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:id="@+id/login_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24.3dp"
+            android:layout_marginRight="24.3dp"
+            android:layout_marginTop="50dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/book_icon" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_account"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/login_icon"
+            android:layout_marginLeft="24.3dp"
+            android:layout_marginRight="24.3dp"
+            android:layout_marginTop="30.7dp"
+            android:background="@drawable/line"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/book_accountpic" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/book_login_line" />
+
+            <EditText
+                android:id="@+id/user_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:inputType="number"
+                android:hint="请输入手机号"
+                android:textColor="@color/standardwhite"
+                android:textColorHint="@color/standardwhite"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignLeft="@+id/layout_account"
+            android:layout_alignRight="@+id/layout_pwd"
+            android:layout_below="@+id/layout_account"
+            android:background="@color/standardwhite" />
+
+        <LinearLayout
+            android:id="@+id/layout_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/layout_account"
+            android:layout_marginLeft="24.3dp"
+            android:layout_marginRight="24.3dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/line"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/book_pwd" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/book_login_line"
+
+                />
+
+            <EditText
+                android:id="@+id/user_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:hint="请输入密码"
+                android:password="true"
+                android:textColor="@color/standardwhite"
+                android:textColorHint="@color/standardwhite"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignLeft="@+id/layout_account"
+            android:layout_alignRight="@+id/layout_pwd"
+            android:layout_below="@+id/layout_pwd"
+            android:background="@color/standardwhite" />
+
+        <TextView
+            android:id="@+id/forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/layout_account"
+            android:layout_below="@+id/layout_pwd"
+            android:layout_marginTop="10dp"
+            android:text="忘记密码"
+            android:textColor="@color/standardgreen" />
+
+        <TextView
+            android:id="@+id/regist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/layout_account"
+            android:layout_below="@+id/layout_pwd"
+            android:layout_marginTop="10dp"
+            android:text="新用户注册"
+            android:textColor="@color/standardgreen" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/layout_pwd"
+            android:layout_alignRight="@+id/layout_pwd"
+            android:layout_below="@+id/layout_pwd"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/buttonshape"
+            android:elevation="1dip"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="@color/standardwhite" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="30dp"
+                android:text="登录即代表阅读并同意"
+                android:textColor="@color/standardwhite"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/text1"
+                android:layout_toRightOf="@+id/text1"
+                android:text="服务条款"
+                android:textColor="@color/standardgreen"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
