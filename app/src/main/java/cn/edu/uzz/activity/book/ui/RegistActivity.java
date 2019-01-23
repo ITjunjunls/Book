@@ -57,7 +57,8 @@ public class RegistActivity extends Activity{
 		account=intent.getStringExtra("account");
         tel= intent.getStringExtra("tel");
 		sex=intent.getStringExtra("sex");
-		truthname=intent.getStringExtra("truthname");		address=intent.getStringExtra("address");
+		truthname=intent.getStringExtra("truthname");
+		address=intent.getStringExtra("address");
 		age=intent.getStringExtra("age");
         //Toast.makeText(RegistActivity.this,tel,Toast.LENGTH_SHORT).show();
         init();

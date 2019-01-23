@@ -493,7 +493,6 @@ public class BookItemActivity extends Activity implements View.OnClickListener {
 						}
 					})
 					.showWarning();
-			Toast.makeText(BookItemActivity.this,"123",Toast.LENGTH_SHORT).show();
 			return false;
 		}
         //1创建请求队列
